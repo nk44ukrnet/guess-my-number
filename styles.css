@@ -1,0 +1,104 @@
+            @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
+            *,
+            *::before,
+            *::after {
+                box-sizing: border-box;
+                margin: 0;
+                padding: 0;
+            }
+            
+            body {
+                font-family: 'Montserrat', sans-serif;
+                font-weight: 400;
+                background-color: #000;
+                color: #fff;
+                font-size: 18px;
+                line-height: 150%;
+                padding-left: 15px;
+                padding-right: 15px;
+            }
+            
+            body.win {
+                background-color: rgb(181, 230, 136);
+            }
+            
+            body.lose {
+                background-color: rgb(255, 110, 53);
+            }
+            
+            h1 {
+                text-align: center;
+                padding-top: 25px;
+                padding-bottom: 25px;
+            }
+            
+            .select-nubmer {
+                padding: 15px;
+                margin-left: auto;
+                text-align: right;
+                font-size: 25px;
+            }
+            
+            .select-nubmer span {
+                font-weight: 700;
+            }
+            
+            .guessForm {
+                width: 100%;
+                max-width: 500px;
+                margin: auto;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding-bottom: 25px;
+            }
+            
+            .guessForm input,
+            .guessForm button {
+                flex: 1 1 70%;
+                max-width: 300px;
+                padding: 15px;
+                display: block;
+                height: 100%;
+                background-color: #fff;
+                border: none;
+            }
+            
+            .guessForm input:disabled {
+                color: black;
+            }
+            
+            .guessForm input:disabled::placeholder {
+                color: black;
+            }
+            
+            .guessForm button {
+                background-color: coral;
+                cursor: pointer;
+                border: none;
+                display: block;
+                margin-left: 5px;
+                color: #fff;
+                text-transform: uppercase;
+                font-weight: 700;
+                flex: 1 1 30%;
+            }
+            
+            .hint,
+            .attemps,
+            .bestScore {
+                text-align: right;
+                padding-bottom: 25px;
+                font-weight: 500;
+                font-size: 20px;
+            }
+            
+            .restart {
+                display: block;
+                padding: 25px;
+                font-size: 25px;
+                background-color: turquoise;
+                border: none;
+                margin: 0 auto 25px;
+                cursor: pointer;
+            }

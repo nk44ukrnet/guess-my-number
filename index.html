@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess my number :O</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <h1>Number guessing game</h1>
+
+    <div class="select-nubmer"> Enter number between
+        <span id="min"></span> and
+        <span id="max"></span>
+    </div>
+
+    <form id="guessForm" class="guessForm">
+        <input type="number" id="input" required />
+        <button id="guess" type="submit">Try your luck</button>
+    </form>
+
+    <div class="hint">
+        <span id="hint"></span>
+    </div>
+
+    <div class="attemps">Attempts left:
+        <span id="attempsLeft"></span>
+    </div>
+    <div class="bestScore">Best score:
+        <span id="bestScore">Win at least 1 time, to see best score</span>
+    </div>
+
+    <button id="restart" class="restart">Restart</button>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
